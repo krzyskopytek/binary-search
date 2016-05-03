@@ -51,16 +51,23 @@ int main(int argc, const char * argv[]) {
             NSLog(@"%@", number);
         }
         
+        //creating first element of tree with root (NSNumber) equal to the first element in test array
         BinaryTreeNode *node = [[BinaryTreeNode alloc]init];
         node.object = testArray[0];
+        node.leftChild = nil;
+        node.rightChild = nil;
+        node.parent = nil;
         
+        // init of tree search
         BinarySearchTree *tree = [[BinarySearchTree alloc]initWithObject:node];
         
         //tree creation
         for (int i = 0; i < testArray.count; i++) {
             
-            node.object = testArray[i];
-            [tree insertObject:node];
+            // new node .. reusing nodeNext pointer
+            BinaryTreeNode *nodeNext = [[BinaryTreeNode alloc]init];
+            nodeNext.object = testArray[i];
+            [tree insertObject:nodeNext];
             
         }
         

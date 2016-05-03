@@ -13,7 +13,7 @@
 
 @property (nonatomic,strong) NSNumber *root;
 
--(instancetype)initWithObject:(NSNumber*)object;
+-(instancetype)initWithObject:(BinaryTreeNode*)object;
 -(void)insertObject:(BinaryTreeNode *)newObject;
 -(BinaryTreeNode*)find:(NSObject*)object;
 -(BinaryTreeNode*)deleteObject:(NSObject*)object;

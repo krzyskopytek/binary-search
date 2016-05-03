@@ -11,7 +11,7 @@
 
 @implementation BinarySearchTree
 
--(instancetype)initWithObject:(NSNumber*)object{
+-(instancetype)initWithObject:(BinaryTreeNode*)object{
     self = [super init];
     if (self) {
         _root = object;
@@ -19,15 +19,15 @@
     return self;
 }
 
--(void)insertObject:(BinaryTreeNode *)newObject{
+-(void)insertObject:(BinaryTreeNode *)newNode{
     
-    if (newObject.object > self.root){
+    if (newNode.object > self.root){
         if(self.rightChild != nil)
             [self.rightChild insert:node];
         else
             self.rightChild = newObject;
     }
-    else if newObject.object < self.root){
+    else if newNode.object < self.root){
         if(self.left != nil)
             [self.left insert:node];
         else
