@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		403D93E71CD950EF0010C362 /* BinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 403D93E61CD950EF0010C362 /* BinarySearchTree.m */; };
 		404924101CD93AF7004D39C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4049240F1CD93AF7004D39C9 /* main.m */; };
+		404924181CD94E4B004D39C9 /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 404924171CD94E4B004D39C9 /* BinaryTreeNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		403D93E51CD950CE0010C362 /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
+		403D93E61CD950EF0010C362 /* BinarySearchTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchTree.m; sourceTree = "<group>"; };
 		4049240C1CD93AF7004D39C9 /* binary-search */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "binary-search"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4049240F1CD93AF7004D39C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		404924161CD94E37004D39C9 /* BinaryTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
+		404924171CD94E4B004D39C9 /* BinaryTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				4049240F1CD93AF7004D39C9 /* main.m */,
+				404924161CD94E37004D39C9 /* BinaryTreeNode.h */,
+				403D93E51CD950CE0010C362 /* BinarySearchTree.h */,
+				403D93E61CD950EF0010C362 /* BinarySearchTree.m */,
+				404924171CD94E4B004D39C9 /* BinaryTreeNode.m */,
 			);
 			path = "binary-search";
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				404924181CD94E4B004D39C9 /* BinaryTreeNode.m in Sources */,
+				403D93E71CD950EF0010C362 /* BinarySearchTree.m in Sources */,
 				404924101CD93AF7004D39C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +251,7 @@
 				404924151CD93AF7004D39C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
